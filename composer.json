@@ -1,0 +1,34 @@
+{
+    "name": "codetyme/laravel-temp-password",
+    "description": "A Laravel package to generate temporary passwords",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rohit Suthar, Mumbai",
+            "email": "rohisuthar@gmail.com",
+            "homepage": "https://github.com/rohitsuthar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "codetyme\\TempPassword\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "codetyme\\TempPassword\\TempPassServiceProvider"
+        ],
+        "aliases": {
+          "TempPass": "Codetyme\\TempPassword\\Facades\\TempPass"
+        }
+      }
+    }
+  }
+  
