@@ -2,8 +2,8 @@
 
 # 🔐 Laravel Temp Password
 
-A Laravel package to generate **one-time, time-limited temporary passwords** for user authentication.  
-These passwords can be used in place of regular passwords **during login** and automatically expire after a configurable period (e.g., 5 minutes).
+A Laravel package to generate one-time, time-limited temporary passwords for user authentication.  
+These passwords can be used in place of regular passwords during login and automatically expire after a configurable period (e.g., 5 minutes).
 
 ---
 
@@ -21,7 +21,7 @@ These passwords can be used in place of regular passwords **during login** and a
 ## 📦 Installation
 
 ```bash
-composer require yourname/laravel-temp-password
+composer require codetyme/laravel-temp-password
 ```
 ---
 
@@ -67,12 +67,12 @@ TEMP_PASS_STRENGTH=strong
 
 ## 🧠 How It Works
 
-Once installed, the package **automatically hooks into Laravel’s default authentication**.  
+Once installed, the package automatically hooks into Laravel’s default authentication.  
 No need to change `Auth::attempt()` or override any guards.
 
 You can log in with either:
 - Regular user password
-- A one-time, time-limited **temporary password**
+- A one-time, time-limited temporary password
 
 ---
 
