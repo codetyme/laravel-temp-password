@@ -102,14 +102,14 @@ php artisan temp-password:generate
 ```
 
 #### Options:
-|----------------|--------------------------------------------|
+
 | Option         | Description                                |
 |----------------|--------------------------------------------|
 | `--email`      | User's email (required or prompted)        |
 | `--model`      | Fully qualified model class (optional)     |
 | `--length`     | Password length (optional)                 |
 | `--strength`   | Password strength (optional)               |
-|----------------|--------------------------------------------|
+
 
 #### Examples:
 
@@ -151,7 +151,7 @@ Auth::attempt(['email' => $user->email, 'password' => $password]); // returns tr
 
 The package creates a `temp_passwords` table with the following structure:
 
-|------------------------|--------------------------------------------|
+
 | Column                 | Description                                |
 |------------------------|--------------------------------------------|
 | `authenticatable_id`   | ID of the user                             |
@@ -159,7 +159,7 @@ The package creates a `temp_passwords` table with the following structure:
 | `temp_password`        | Bcrypt-hashed temp password                |
 | `used`                 | Marked true after first use                |
 | `created_at`           | For expiry check                           |
-|------------------------|--------------------------------------------|
+
 
 ---
 
