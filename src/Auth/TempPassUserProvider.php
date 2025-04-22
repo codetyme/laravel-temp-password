@@ -12,10 +12,17 @@ class TempPassUserProvider extends EloquentUserProvider
     {
         $plain = $credentials['password'];
 
+        // First check if the main password matches
         if (Hash::check($plain, $user->getAuthPassword())) {
             return true;
         }
 
+        // Check if temp passwords are enabled in the config
+        if (! config('temp-password.enabled')) {
+            return false;
+        }
+
+        // Fall back to validating the temporary password
         return TempPass::validate(
             $user->getAuthIdentifier(), 
             $plain, 

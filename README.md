@@ -2,8 +2,8 @@
 
 # 🔐 Laravel Temp Password
 
-A Laravel package to generate one-time, time-limited temporary passwords for user authentication.  
-These passwords can be used in place of regular passwords during login and automatically expire after a configurable period (e.g., 5 minutes).
+A Laravel package to generate **one-time, time-limited temporary passwords** for user authentication.
+These passwords can be used in place of regular passwords **during login** and automatically expire after a configurable period (e.g., 5 minutes).
 
 ---
 
